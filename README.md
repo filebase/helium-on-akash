@@ -1,5 +1,7 @@
 # Helium on Akash
 
+## This fork contains modifications to use Filebase as the backing store.
+
 This repository includes everything needed to run a Helium validator on Akash. The container will connect to an S3 bucket to upload/download the swarm_key on boot. 
 
 The main files to understand are:
