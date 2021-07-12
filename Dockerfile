@@ -11,11 +11,11 @@ ENV NAT_EXTERNAL_PORT 2154
 ENV AWSCLI_VERSION "1.14.10"
 
 RUN apk add --update \
-    python \
-    python-dev \
+    python3 \
+    python3-dev \
     py-pip \
     build-base \
-    && pip install awscli==$AWSCLI_VERSION --upgrade --user \
+    && pip install six awscli==$AWSCLI_VERSION --upgrade --user \
     && apk --purge -v del py-pip \
     && rm -rf /var/cache/apk/*
 
